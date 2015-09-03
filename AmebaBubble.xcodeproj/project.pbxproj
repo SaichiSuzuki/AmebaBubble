@@ -13,6 +13,8 @@
 		15A266D91B9701C600B2BD6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A266D81B9701C600B2BD6A /* Images.xcassets */; };
 		15A266DC1B9701C600B2BD6A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A266DA1B9701C600B2BD6A /* LaunchScreen.xib */; };
 		15A266E81B9701C600B2BD6A /* AmebaBubbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A266E71B9701C600B2BD6A /* AmebaBubbleTests.swift */; };
+		15A267221B970D2900B2BD6A /* Ameba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A267211B970D2900B2BD6A /* Ameba.swift */; };
+		15A267541B97D8DF00B2BD6A /* ScreenCaptureUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A267531B97D8DF00B2BD6A /* ScreenCaptureUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		15A266E11B9701C600B2BD6A /* AmebaBubbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmebaBubbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A266E61B9701C600B2BD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15A266E71B9701C600B2BD6A /* AmebaBubbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmebaBubbleTests.swift; sourceTree = "<group>"; };
+		15A267211B970D2900B2BD6A /* Ameba.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ameba.swift; sourceTree = "<group>"; };
+		15A267531B97D8DF00B2BD6A /* ScreenCaptureUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenCaptureUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				15A266D11B9701C600B2BD6A /* AppDelegate.swift */,
 				15A266D31B9701C600B2BD6A /* ViewController.swift */,
+				15A267211B970D2900B2BD6A /* Ameba.swift */,
+				15A267531B97D8DF00B2BD6A /* ScreenCaptureUtil.swift */,
 				15A266D51B9701C600B2BD6A /* Main.storyboard */,
 				15A266D81B9701C600B2BD6A /* Images.xcassets */,
 				15A266DA1B9701C600B2BD6A /* LaunchScreen.xib */,
@@ -214,6 +220,8 @@
 			files = (
 				15A266D41B9701C600B2BD6A /* ViewController.swift in Sources */,
 				15A266D21B9701C600B2BD6A /* AppDelegate.swift in Sources */,
+				15A267541B97D8DF00B2BD6A /* ScreenCaptureUtil.swift in Sources */,
+				15A267221B970D2900B2BD6A /* Ameba.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +419,7 @@
 				15A266ED1B9701C600B2BD6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15A266EE1B9701C600B2BD6A /* Build configuration list for PBXNativeTarget "AmebaBubbleTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				15A266F01B9701C600B2BD6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
