@@ -15,17 +15,23 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //1秒おきにアメーバ生成
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "create", userInfo: nil, repeats: true)
+        // 1秒おきにアメーバ生成
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "createAmeba", userInfo: nil, repeats: true)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func create(){
-        var rect = CGRect(x: CGFloat(arc4random() % (UInt32)(self.view.bounds.width)), y: CGFloat(arc4random() % (UInt32)(self.view.bounds.height)), width: 200, height: 100)
+    /** アメーバ生成 */
+    func createAmeba(){
+        // アメーバRect作成
+        var rect = CGRect(x: CGFloat(arc4random() % (UInt32)(self.view.bounds.width)), y: CGFloat(arc4random() % (UInt32)(self.view.bounds.height)), width: CGFloat(arc4random() % 100), height: CGFloat(arc4random() & 100))
         let a = Ameba(view: self,rect: rect)
-        a.createAmeba()
+        // アメーバ細かさ設定
+        var fineness:Int = (Int(rect.width) * Int(rect.height)) / 6
+        if(fineness>700){fineness = 700}
+        // 作成
+        a.createAmeba(fineness)
     }
 }
