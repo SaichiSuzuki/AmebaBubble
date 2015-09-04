@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     /** アメーバ生成 */
     func createAmeba(){
         // アメーバRect作成
-        var rect = CGRect(x: CGFloat(arc4random() % (UInt32)(self.view.bounds.width)), y: CGFloat(arc4random() % (UInt32)(self.view.bounds.height)), width: CGFloat(arc4random() % 100), height: CGFloat(arc4random() & 100))
+        var rect = CGRect(x: CGFloat(arc4random() % (UInt32)(self.view.bounds.width)), y: CGFloat(arc4random() % (UInt32)(self.view.bounds.height/2)), width: CGFloat(arc4random() % 100), height: CGFloat(arc4random() & 100))
         let a = Ameba(view: self,rect: rect)
         // アメーバ細かさ設定
         var fineness:Int = (Int(rect.width) * Int(rect.height)) / 6
